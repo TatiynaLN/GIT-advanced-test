@@ -22,6 +22,15 @@
         git branch "new-branch"<br>
         примечание: git branch создает ветку, не переходя в нее<br>
     </p>
+
+    <h1>Cоздание новой ветки от текущего коммита
+        и указание слежения на ветку удаленного репозитория:</h1>
+
+    <p>git switch -c &lt;branch&gt; --track &lt;remote&gt;/&lt;branch&gt;<br>
+    git checkout -b &lt;branch&gt; --track &lt;remote&gt;/&lt;branch&gt;</p>
+
+    <h3>Создание ветки без родительского коммита</h3>
+    <p>git switch --orphan &lt;new_branch&gt;</p>
 </body>
 
 </html>
