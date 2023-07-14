@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        <b>Checkout</b>
+        дополнительные возможности
+    </h1>
+    <p>Спецификация:
+    </p>
+    <p><b>git checkout [-q] [-f] [-m] [&lt;branch&gt;]</b>
+        <br> Где,-q --quiet <i>режим тишины, не выводить сообщения</i>
+    </p>
+    <br>
+    <p><b>git checkout [-q] [-f] [-m] --detach [&lt;branch&gt;]</b>
+        <br> где - -f --force 
+        <i>
+            при переключении веток позволяет продолжить работу, даже если индекс или рабочее дерево отличается от HEAD. Отменяет локальные изменения при переключении ветки.
+        </i>
+    </p>
+    <br>
+    <p><b>git checkout [-q] [-f] [-m] [--detach] &lt;commit&gt;</b>
+        <br>
+        -m --merge
+        <i>
+            проводит слияние между текущей веткой, изменениями в рабочей директории и создает новую ветку
+        </i>
+    </p>
+    <p><b>git checkout [-q] [-f] [-m] [[-b|-B|--orphan] &lt;new_branch&gt;] [&lt;start_point&gt;]</b>
+        <br>
+        --detach 
+        <i>переводит в состояние detached HEAD</i>
+        <br>
+        --orphan
+        <i>создает новую ветку, первый коммит которой не будет иметь родительских коммитов, то есть будет самым первый коммитом в истории</i>
+    </p>
+    <br>
+    <p><b>Например, если использовать команду</b>
+    <br>
+    git checkout --orphan clean_branch
+    <br>
+    <b>Получим состояние</b>
+    <br>
+    <i>git log -n 3</i> - fatal:
+</p>
+</body>
+
+</html>
